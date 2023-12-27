@@ -32,6 +32,7 @@ export const WrapperInputIcon = styled.View`
 
 export const WrapperButtons = styled.View`
   justify-content: center;
+  align-items: center;
   width: ${wp(100)}px;
   padding: ${hp(7.04)}px ${wp(6.11)}px;
   gap: 20px;
@@ -50,5 +51,52 @@ export const Button = styled.TouchableOpacity`
   border-radius: ${wp(4.07)}px;
 
   justify-content: center;
+  align-items: center;
+`;
+
+export const Separator = styled.View`
+  width: 96px;
+  height: 1px;
+  background: #B8B8B8;
+`;
+
+export const WrapperSeparator = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const WrapperSocialButtons = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: ${hp(3)}px ${wp(6.11)}px;
+`;
+
+export const SocialButton = styled.TouchableOpacity`
+  width: 72px;
+  height: 56px;
+  border-radius: 16px;
+  border: 1px solid ${({ theme }) => theme.colors.secondary_100};
+  align-items: center;
+  justify-content: center;
+`;
+
+export const WrapperPlusButton = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: ${hp(2)}px;
+`;
+
+export const CheckBox = styled.View`
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid ${({ theme }) => theme.colors.secondary_200};
+  margin-right: 5px;
+`;
+
+export const RememberButton = styled.View`
+  flex-direction: row;
   align-items: center;
 `;
