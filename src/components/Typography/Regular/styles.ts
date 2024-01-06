@@ -46,11 +46,13 @@ const variantFontSize = (theme: DefaultTheme, variant = '16') => ({
 
 interface ITextProps {
   fontSize?: "12" | "14" | "16" | "18" | "20" | "24" | "32" | "36" | "40" | "72";
+  color?: string;
 }
 
 export const MyText = styled.Text<ITextProps>`
   font-family: ${({ theme }) => theme.fonts.regular};
 
   ${({ theme, fontSize }) => variantFontSize(theme, fontSize)};
+  color: ${({ theme, color }) => theme.colors[color]};
 `;
 

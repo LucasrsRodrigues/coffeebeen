@@ -13,6 +13,7 @@ import {
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
 import { Login } from './src/screens/Login';
+import { HomePage } from '@screens/HomePage';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -33,7 +34,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Login />
+      <HomePage />
     </ThemeProvider>
   );
 }

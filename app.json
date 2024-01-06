@@ -1,10 +1,16 @@
 {
   "expo": {
-    "name": "fairplay",
-    "slug": "fairplay",
+    "name": "coffebeen",
+    "slug": "coffebeen",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "br.com.coffebeen.app"
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.coffebeen.app"
+    }
   }
 }
