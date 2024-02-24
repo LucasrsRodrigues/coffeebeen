@@ -14,6 +14,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
 import { Login } from './src/screens/Login';
 import { HomePage } from '@screens/HomePage';
+import { Routes } from '@routes/index';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -34,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <HomePage />
+      <Routes />
     </ThemeProvider>
   );
 }

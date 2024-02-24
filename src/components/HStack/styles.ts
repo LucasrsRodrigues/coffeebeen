@@ -1,12 +1,11 @@
 import styled, { css } from "styled-components/native";
-import { widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 interface IContainerProps {
   space?: string;
 }
 
 export const Container = styled.View<IContainerProps>`
-  width: ${wp(100)}px;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   
